@@ -1,8 +1,8 @@
 import { galleryItems } from "./gallery-items.js";
 
 const gallery = document.querySelector(".gallery");
-const images = galleryItems.map(createGalleryMarkup).join("");
-gallery.insertAdjacentHTML("afterbegin", images);
+const galleryMarkup = galleryItems.map(createGalleryMarkup).join("");
+gallery.insertAdjacentHTML("afterbegin", galleryMarkup);
 
 gallery.addEventListener("click", (e) => {
   e.preventDefault();
